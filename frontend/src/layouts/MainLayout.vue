@@ -61,6 +61,9 @@ import {
   ShoppingCartOutlined,
   ShopOutlined,
   FileTextOutlined,
+  CheckCircleOutlined,
+  BellOutlined,
+  HeartOutlined,
   MenuFoldOutlined,
   MenuUnfoldOutlined,
   DownOutlined,
@@ -92,6 +95,12 @@ const allMenuItems = [
     roles: ['admin', 'canteen', 'worker'],
   },
   {
+    key: '/checkin',
+    icon: CheckCircleOutlined,
+    label: '就餐签到',
+    roles: ['admin', 'canteen', 'worker'],
+  },
+  {
     key: '/elderly',
     icon: UserOutlined,
     label: '老人管理',
@@ -102,6 +111,18 @@ const allMenuItems = [
     icon: ShoppingCartOutlined,
     label: '订单管理',
     roles: ['admin', 'canteen', 'worker'],
+  },
+  {
+    key: '/care-alerts',
+    icon: BellOutlined,
+    label: '关爱预警',
+    roles: ['admin', 'worker'],
+  },
+  {
+    key: '/care-list',
+    icon: HeartOutlined,
+    label: '关怀名单',
+    roles: ['admin', 'worker'],
   },
   {
     key: '/canteens',

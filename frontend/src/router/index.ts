@@ -55,6 +55,45 @@ const routes: RouteRecordRaw[] = [
           roles: ["admin", "worker"],
         },
       },
+      {
+        path: "checkin",
+        name: "CheckIn",
+        component: () => import("@/views/CheckIn.vue"),
+        meta: {
+          title: "就餐签到",
+          icon: "CheckCircleOutlined",
+        },
+      },
+      {
+        path: "care-alerts",
+        name: "CareAlerts",
+        component: () => import("@/views/CareAlerts.vue"),
+        meta: {
+          title: "关爱预警",
+          icon: "BellOutlined",
+          roles: ["admin", "worker"],
+        },
+      },
+      {
+        path: "care-list",
+        name: "CareList",
+        component: () => import("@/views/CareList.vue"),
+        meta: {
+          title: "关怀名单",
+          icon: "HeartOutlined",
+          roles: ["admin", "worker"],
+        },
+      },
+      {
+        path: "elderly/:id/profile",
+        name: "ElderlyProfile",
+        component: () => import("@/views/ElderlyProfile.vue"),
+        meta: {
+          title: "老人画像",
+          hideInMenu: true,
+          roles: ["admin", "worker"],
+        },
+      },
     ],
   },
 ];
